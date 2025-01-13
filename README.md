@@ -7,14 +7,20 @@ The system evaluates the model's performance using precision and recall metrics,
 The evaluation criteria hinge on IoU thresholds: detections are true positives (TP) when IoU ≥ 0.5, while IoU < 0.5 results in false positives (FP) or false negatives (FN). The thresholds were refined to λ values (0.5, 0.75, and 0.95), demanding higher accuracy for tighter thresholds. The Shapely library and Matplotlib were employed for visualizing bounding boxes in Python.
 
 The project's precision and recall metrics were computed as:
+
 <img width="387" alt="image" src="https://github.com/user-attachments/assets/a768bb66-8b25-4543-be4b-63f3aa177b09" />
+
 Precision focuses on reducing false positives, while recall emphasizes minimizing false negatives, critical in safety-centric applications.
 
 **Results**
 The object detector's performance was visually and quantitatively analyzed. The outputs depicted varied scenes with TP, FP, and FN counts. For example:
+
 TP = 5, FP = 11, FN = 1 — A challenging scenario with multiple false detections.
+
 TP = 6, FP = 0, FN = 0 — High precision in simpler environments.
+
 TP = 8, FP = 5, FN = 0 — Moderate complexity with some false positives.
+
 The detector performed admirably in uncluttered environments but struggled in dense or ambiguous scenes, often producing overlapping bounding boxes or phantom object detections.
 
 **Conclusion**
