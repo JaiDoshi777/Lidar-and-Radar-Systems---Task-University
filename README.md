@@ -1,4 +1,4 @@
-# Lidar-and-Radar-Systems---Task-University
+# LiDAR-based Object Detection with YOLO
 This project implements a YOLO-based object detection system utilizing LiDAR data represented as BEV images. The KITTI dataset, featuring 3D bounding boxes (BBs) as ground truth, was used for evaluation across 20 scenes. 
 
 The system evaluates the model's performance using precision and recall metrics, with detections highlighted in red and ground truth in green. Judgments were made based on Intersection over Union (IoU) thresholds, reflecting detection accuracy.
